@@ -1,6 +1,9 @@
 from utils import assert_msg
 
 class ExchangeAPI:
+    """
+    模拟交易所
+    """
     def __init__(self, data, cash, commission):
         assert_msg(0 < cash, "初始现金数量大于0，输入的现金数量：{}".format(cash))
         assert_msg(0 <= commission <= 0.05, "合理的手续费率一般不会超过5%，输入的费率：{}".format(commission))
