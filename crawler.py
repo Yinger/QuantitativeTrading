@@ -3,7 +3,7 @@ import ssl
 import json
 import time
 
-from src.orderbook import OrderBook
+from orderbook import OrderBook
 
 class Crawler:
     def __init__(self, symbol, output_file):
